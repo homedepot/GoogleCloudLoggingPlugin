@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+  This plugin logs job details to BigQuery or Datastore.
+</div>

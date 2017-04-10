@@ -1,0 +1,20 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:section title="Google Cloud Logging">
+    <f:entry title="Enable BigQuery Logging">
+  <f:checkbox name="enableBigQuery" field="enableBigQuery" checked="${it.enableBigQuery}"/>
+  </f:entry>
+  <f:entry title="Project" help="Google BigQuery Project">
+    <f:textbox name="bqProject" value="${it.bqProject}"/>
+  </f:entry>
+  <f:entry title="Dataset" help="Google BigQuery Dataset">
+    <f:textbox name="bqDataset" value="${it.bqDataset}"/>
+  </f:entry>
+    <f:entry title="Table" help="Google BigQuery Table">
+      <f:textbox name="bqTable" value="${it.bqTable}"/>
+    </f:entry>
+    <f:entry title="Enable Datastore Logging">
+  <f:checkbox name="enableDatastore" field="enableDatastore" checked="${it.enableDatastore}"/>
+  </f:entry>
+  </f:section>
+</j:jelly>
